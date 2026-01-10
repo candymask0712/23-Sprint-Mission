@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Pretendard", sans-serif;
+  background-color: var(--bg-gray);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* index */
+header {
+  height: 70px;
+  padding: 9px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.header-inner {
+  width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header-login-btn {
+  padding: 12px 23px;
+  background-color: #3692ff;
+  color: #f3f4f6;
+  border-radius: 8px;
+  font: 600 16px/26px "Pretendard";
+  width: 128px;
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section-span {
+  font: 800 18px / 26px "Abhaya Libre";
+  color: #3692ff;
+}
+
+.section-top {
+  height: 540px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: #cfe5ff;
+}
+
+.section-top-inner {
+  display: flex;
+  width: 1110px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.section-top-inner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 260px;
+}
+
+.section-top-inner-left h1 {
+  font: 700 40px/140% "Pretendard";
+  word-break: keep-all;
+}
+
+.section-top-inner-left a {
+  padding: 16px 0;
+  background-color: #3692ff;
+  border-radius: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #f9fafb;
+  font: 600 20px / 32px "Pretendard";
+}
+
+.section-main {
+  padding: 138px 466px;
+  margin: auto;
+}
+
+.section-main-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  background-color: #fcfcfc;
+}
+
+.section-main-inner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding-right: 24px;
+  word-break: keep-all;
+}
+
+.section-main-inner-right h2 {
+  font: 700 40px / 140% "Pretendard";
+  color: #374151;
+}
+
+.section-main-inner-right p {
+  font: 500 24px/32px "Pretendard";
+  color: #374151;
+}
+
+.section-main-inner.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-main-inner.reverse .section-main-inner-right {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 24px;
+}
+
+.section-bottom {
+  height: 540px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: #cfe5ff;
+}
+
+.section-bottom-inner {
+  display: flex;
+  width: 1110px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 69px;
+}
+
+.section-bottom-inner h2 {
+  font: 700 40px / 140% "Pretendard";
+  color: #374151;
+  word-break: keep-all;
+}
+
+footer {
+  height: 160px;
+  background-color: #111827;
+}
