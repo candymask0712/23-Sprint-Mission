@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pretendard', 'Abhaya Libre', sans-serif;
+    word-break: keep-all;
+}
+
+body {
+    margin: 0;
+}
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width:1120px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login {
+    width: 128px;
+    height: 48px;
+    background: #3692FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background: #1967D6;
+}
+
+.login:active {
+    background: #1251AA;
+}
+
+/* 비주얼 영역 */
+.visual {
+    background: #CFE5FF;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-contents {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background: url('img/Img_home_top.png') no-repeat right bottom;
+}
+
+.visual-contents,
+.bottom-contents {
+    width: 1120px;
+}
+
+.visual-button {
+    width: 357px;
+    height: 56px;
+    background: #3692FF;
+    border-radius: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.visual-button:hover {
+    background: #1967D6;
+}
+
+.visual-button:active {
+    background: #1251AA;
+}
+
+/* 컨텐츠 영역 */
+article {
+    width: 988px;
+    height: 100%;
+    margin: 138px auto;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background: #fcfcfc;
+}
+
+.b-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3692FF;
+    font-family: 'Abhaya Libre'
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #374151;
+}
+
+.description {
+    font-family: 'Pretendard';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #374151;
+}
+
+article:nth-child(2) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.visual-bottom {
+    width: 100%;
+    height: 540px;
+    background-color: #CFE5FF;
+}
+
+.bottom-contents {
+    width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: url('img/Img_home_bottom.png') no-repeat bottom right;
+}
+
+/* 푸터 영역*/
+footer {
+    width: 100%;
+    height: 160px;
+    background: #111827;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 32px;
+}
+
+.footer-wrap {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrap:nth-child(1) {
+    font-weight: 200;
+    color: #9CA3AF;
+}
+
+.center {
+    display: flex;
+    gap: 30px;
+}
+
+.center a {
+    display: inline-block;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.footer-wrap>ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrap>ul>li>a {
+    display: inline-block;
+}
+
+@media screen and (max-width:1919px) {
+    header{
+        padding:0 400px;
+    }
+    nav > a, .login{
+        flex-shrink: 1;
+    }
+}
