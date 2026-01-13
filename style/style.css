@@ -28,7 +28,7 @@
 
 .header-login-btn {
   padding: 12px 23px;
-  background-color: #3692ff;
+  background-color: var(--primary-blue);
   color: #f3f4f6;
   border-radius: 8px;
   font: 600 16px/26px "Pretendard";
@@ -40,7 +40,7 @@
 
 .section-span {
   font: 800 18px / 26px "Abhaya Libre";
-  color: #3692ff;
+  color: var(--primary-blue);
 }
 
 .section-top {
@@ -73,11 +73,11 @@
 
 .section-top-inner-left a {
   padding: 16px 0;
-  background-color: #3692ff;
+  background-color: var(--primary-blue);
   border-radius: 40px;
   text-align: center;
   vertical-align: middle;
-  color: #f9fafb;
+  color: var(--gray-50);
   font: 600 20px / 32px "Pretendard";
 }
 
@@ -104,12 +104,12 @@
 
 .section-main-inner-right h2 {
   font: 700 40px / 140% "Pretendard";
-  color: #374151;
+  color: var(--gray-700);
 }
 
 .section-main-inner-right p {
   font: 500 24px/32px "Pretendard";
-  color: #374151;
+  color: var(--gray-700);
 }
 
 .section-main-inner.reverse {
@@ -140,11 +140,11 @@
 
 .section-bottom-inner h2 {
   font: 700 40px / 140% "Pretendard";
-  color: #374151;
+  color: var(--gray-700);
   word-break: keep-all;
 }
 
 footer {
   height: 160px;
-  background-color: #111827;
+  background-color: var(--gray-900);
 }
