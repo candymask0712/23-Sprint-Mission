@@ -1,0 +1,183 @@
+/* 재사용하는 스타일 */
+.gnb {
+  width: 1120px;
+  margin: 9.5px auto;
+}
+
+.gnb > nav {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+.btn-small-48 {
+  padding: 12px 23px;
+  background-color: var(--primary-100);
+  border-radius: 8px;
+  color: var(--secondary-100);
+  vertical-align: middle;
+  text-align: center;
+
+  font: var(--text-lg);
+}
+
+.btn-small-48:hover {
+  background-color: var(--primary-200);
+}
+
+.btn-small-48:active {
+  background-color: var(--primary-300);
+}
+
+.btn-small-48:disabled {
+  background-color: var(--primary-400);
+}
+
+.btn-large {
+  padding: 16px 124px;
+  background-color: var(--primary-100);
+  border-radius: 40px;
+  color: var(--secondary-100);
+  vertical-align: middle;
+  text-align: center;
+
+  font: var(--text-lg);
+}
+
+.btn-large:hover {
+  background-color: var(--primary-200);
+}
+
+.btn-large:active {
+  background-color: var(--primary-300);
+}
+
+.btn-large:disabled {
+  background-color: var(--primary-400);
+}
+
+/* index.css */
+.login-button {
+  width: 128px;
+  height: 48px;
+}
+
+.landing-header {
+  background-color: var(--bg-blue);
+  padding-top: 200px;
+}
+
+.landing-header > div {
+  width: 1110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+}
+
+.landing-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: var(--secondary-700);
+}
+
+.landing-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 60px;
+  word-break: keep-all;
+}
+
+.landing-body {
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-home {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+
+  width: 988px;
+  margin: 138px auto;
+  background-color: var(--bg-gray);
+}
+
+.landing-home-content > span {
+  font: var(--text-2lg);
+  color: var(--primary-100);
+  font-weight: 800;
+}
+.landing-home-content > div {
+  margin-top: 12px;
+}
+.landing-home-content > div > p {
+  font: var(--text-2xl);
+  color: var(--secondary-700);
+  font-weight: 500;
+}
+.landing-home-content > div > h2 {
+  margin-bottom: 24px;
+}
+
+.landing-footer {
+  background-color: var(--bg-blue);
+  padding-top: 200px;
+}
+.landing-footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  height: 160px;
+  background-color: var(--secondary-900);
+}
+
+.footer-content {
+  margin: auto;
+  padding: 32px;
+  width: 1120px;
+  background-color: var(--secondary-900);
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-white);
+}
+.footer-content-policy {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer-content-policy > a {
+  color: var(--bg-white);
+}
+.footer-content-icons {
+  display: flex;
+  gap: 12px;
+}
+
+/*재사용 하지 않는 스타일*/
+.w-274 {
+  width: 274px;
+}
+
+.w-288 {
+  width: 288px;
+}
+
+.w-335 {
+  width: 335px;
+}
+
+.text-right {
+  text-align: right;
+  margin-left: 14px;
+}
