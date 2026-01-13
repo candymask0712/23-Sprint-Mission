@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FCFCFC;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
