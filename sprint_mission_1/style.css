@@ -1,215 +1,214 @@
-* {
-  box-sizing: border-box;
-}
+@import "reset.css";
+@import "global.css";
 
-body {
-    margin: 0;
-    background-color: #F9FAFB;
-    font-family: "Pretendard", "Noto Sans KR", sans-serif;
-}
-
-h2, h3, p {
-    margin: 0;
+h1, h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #374151;
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 140%;
-    color: #374151;
-}
-
-h3 {
-    font-family: "Abhaya Libre";
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 140%;
-    color: #3692FF;
+  font-family: "Abhaya Libre";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #3692FF;
 }
 
 p {
-    font-size: 1.5rem;
-    line-height: 140%;
-    color: #374151;
-    font-family: "Pretendard";
+  font-size: 1.5rem;
+  line-height: 140%;
+  color: #374151;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header-contain {
-    max-width: 70rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 0.56rem 12.5rem;
+  max-width: 70rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0.56rem 12.5rem;
 }
 
 #logo {
-    height: 2.625rem;
+  height: 2.625rem;
 }
 
 .btn {
-    background-color: #3692FF;
-    cursor: pointer;
-    color: #F3F4F6;
-    text-decoration: none;
-    text-align: center;
-    flex-shrink:0;
+  background-color: #3692FF;
+  cursor: pointer;
+  color: #F3F4F6;
+  text-decoration: none;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .login {
-    width: 8rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    padding: 0.75rem;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem;
 }
 
-main, .main-bottom {
-    background-color: #CFE5FF;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
+main,
+.main-bottom {
+  background-color: #CFE5FF;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
 main {
-    padding-top: 12.5rem;
+  padding-top: 12.5rem;
 }
 
 .main-bottom {
-    padding-top: 9rem;
-    margin-top: 8.625rem;
+  padding-top: 9rem;
+  margin-top: 8.625rem;
 }
 
-.main-top, .main-bottom-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 70rem;
-    width: 100%;
+.main-top,
+.main-bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70rem;
+  width: 100%;
 }
 
-.main-top-txt, .main-bottom-txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    gap: 2rem;
-    padding-bottom: 3.5rem;
-    margin: 2.5rem 0;
+.main-top-txt,
+.main-bottom-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  gap: 2rem;
+  padding-bottom: 3.5rem;
+  margin: 2.5rem 0;
 }
 
 .main-bottom-txt {
-    min-width: 18.75rem;
+  min-width: 18.75rem;
 }
 
 #main-top-img {
-    display: block;
-    width: 46.625rem;
-    height: 21.25rem;
+  display: block;
+  width: 46.625rem;
+  height: 21.25rem;
 }
 
 #main-bottom-img {
-    display: block;
-    width: 46.625rem;
-    height: 24.816rem;
+  display: block;
+  width: 46.625rem;
+  height: 24.816rem;
 }
 
 .seeing {
-    width: 22.3rem;
-    height: 3.5rem;
-    border-radius: 2.5rem;
-    font-size: 1.25rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 22.3rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-1, .main-2, .main-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8.625rem 0;
-    background-color: #ffffff;
+.main-1,
+.main-2,
+.main-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.625rem 0;
+  background-color: #ffffff;
 }
 
 .main-box {
-    max-width: 62.5rem;
-    display: flex;
-    background-color: #FCFCFC;
-    border-radius: 0.75rem;
-    justify-content: center;
-    align-items: center;
-    width: 88%;
-    gap: 3.125rem;
+  max-width: 62.5rem;
+  display: flex;
+  background-color: #FCFCFC;
+  border-radius: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  gap: 3.125rem;
 }
 
 .main-img {
-    width: 36rem;
-    border-radius: 0;
+  width: 36rem;
+  border-radius: 0;
 }
 
-.main-txt, .main-txt-rv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.75rem;
-    min-width: 22.4rem;
+.main-txt,
+.main-txt-rv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  min-width: 22.4rem;
 }
 
 .main-txt-rv {
-    text-align: end;
+  text-align: end;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #111827;
-    font-size: 1rem;
-    color: #9CA3AF;
-    padding: 2rem 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #111827;
+  font-size: 1rem;
+  color: #9CA3AF;
+  padding: 2rem 12.5rem;
 }
 
 .footer-info {
-    display: flex;
-    flex-shrink: 0;
-    max-width: 70rem;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 4.75rem;
-    gap: 1.25rem;
+  display: flex;
+  flex-shrink: 0;
+  max-width: 70rem;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 4.75rem;
+  gap: 1.25rem;
 }
 
-.footer-info-left, .footer-info-center {
-    display: flex;
-    font-size: 1rem;
+.footer-info-left,
+.footer-info-center {
+  display: flex;
+  font-size: 1rem;
 }
 
 .footer-info-left {
-    color: #9CA3AF;
-    min-width: 10%;
+  color: #9CA3AF;
+  min-width: 10%;
 }
 
 .footer-info-center {
-    gap: 1.875rem;
-    color: #E5E7EB;
-    min-width: 15%;
+  gap: 1.875rem;
+  color: #E5E7EB;
+  min-width: 15%;
 }
 
 .footer-info-sns {
-    display: flex;
-    gap: 0.75rem;
-    min-width: 10%;
+  display: flex;
+  gap: 0.75rem;
+  min-width: 10%;
 }
 
 .footer-a {
-    text-decoration: none;
-    color: #E5E7EB;
+  text-decoration: none;
+  color: #E5E7EB;
 }

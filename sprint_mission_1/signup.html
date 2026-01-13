@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="auth.css">
-  <title>로그인</title>
+  <title>회원가입</title>
 </head>
 <body>
   <div class="auth-page">
@@ -16,14 +16,25 @@
         <label for="id">이메일</label>
         <input required id="id" type="email" name="id" placeholder="example@email.com">
       </div>
+      <div class="name">
+        <label for="name">닉네임</label>
+        <input required id="name" type="text" name="name" placeholder="닉네임">
+      </div>
       <div class="password">
         <label for="password">비밀번호</label>
         <div class="password-input">
           <input required id="password" type="password" name="password" placeholder="비밀번호">
           <img src="images/btn_visibility_on.svg">
         </div>
+      </div>   
+      <div class="password">
+        <label>비밀번호 확인</label>
+        <div class="password-input">
+          <input required type="password" placeholder="비밀번호 확인">
+          <img src="images/btn_visibility_on.svg">
+        </div>
       </div>
-      <button>로그인</button>
+      <button>회원가입</button>
       <div class="easy-login">
         <p class="easy-login-txt">간편 로그인하기</p>
         <div class="easy-login-img">
@@ -32,7 +43,7 @@
         </div>
       </div>
       <div class="auth-footer">
-        <p>판다마켓이 처음이신가요?<a href="signup.html">회원가입</a></p>
+        <p>이미 회원이신가요?<a href="login.html">로그인</a></p>
       </div>
     </form>
     
