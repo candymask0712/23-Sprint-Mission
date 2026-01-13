@@ -1,14 +1,60 @@
 @charset "utf-8";
 
-* {
-    margin: 0 0;
-    padding: 0;
-    list-style: none;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 html, body {
     background-color: #fff;
-    color: #374151;
+    color: var(--gray700);
+    font-family: "Pretendard", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 a {
@@ -16,10 +62,29 @@ a {
     cursor: pointer;
 }
 
+/* Color Palette */
+:root {
+    --blue: #3692FF;
+    --gray900: #111827;
+    --gray800: #1F2937;
+    --gray700: #374151;
+    --gray600: #4B5563;
+    --gray500: #6B7280;
+    --gray400: #9CA3AF;
+    --gray200: #E5E7EB;
+    --gray100: #F3F4F6;
+    --gray50: #F9FAFB;
+}
+
+/* Main Page */
+/* header */
 .main-header {
     width: 100%;
     background-color: #fff;
     height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-top {
@@ -40,11 +105,13 @@ a {
     width: 128px;
     height: 48px;
     line-height: 48px;
-    background-color: #3692ff;
+    background-color: var(--blue);
     border-radius: 8px;
     color: #fff;
     text-align: center;
 }
+
+/* main */
 
 .banner-top {
     width: 100%;
@@ -71,17 +138,25 @@ a {
 .banner-top-notice {
     width: 357px;
     height: 260px;
+    line-height: 50px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    font-size: 1.3rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.00001rcap;
+    font-weight: 600;
+}
+
+.banner-top-notice a {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .banner-top-btn {
     width: 357px;
     height: 56px;
     line-height: 56px;
-    background-color: #3692ff;
+    background-color: var(--blue);
     color: #fff;
     text-align: center;
     border-radius: 40px;
@@ -119,14 +194,16 @@ a {
     margin-right: 12px;
     gap: 12px;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 2.1rem;
+    font-weight: 600;
     width: 320px;
     height: 240px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 45px;
 }
 
 .detail-title {
-    color: #3692ff;
+    font-size: 1.2rem;
+    color: var(--blue);
 }
 
 .detail-second {
@@ -135,6 +212,8 @@ a {
 
 .detail-content {
     font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .banner-bottom {
@@ -157,13 +236,17 @@ a {
 .banner-bottom-notice {
     width: 295px;
     height: 172px;
-    font-size: 1.1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 50px;
 }
+
+/* footer */
 
 .main-footer {
     width: 100%;
     height: 160px;
-    background-color: #1E1E1E;
+    background-color: var(--gray900);
     padding-top: 20px;
 }
 
@@ -176,7 +259,7 @@ a {
 }
 
 .copy {
-    color: #9CA3AF;
+    color: var(--gray400);
 }
 
 .footer-menu{
@@ -191,7 +274,7 @@ a {
 
 .footer-menu li a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--gray200);
 }
 
 .sns {
@@ -207,4 +290,110 @@ a {
 .sns li img {
     width: 20px;
     height: 20px;
+}
+
+/* Login Page, Signup page */
+
+.login-header,
+.signup-header {
+    width: 640px;
+    margin: 60px auto 40px;
+}
+
+.login-logo img,
+.signup-logo img {
+    width: 396px;
+    height: 132px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main-login, 
+.main-signup {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.main-login form, 
+.main-signup form {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-login, 
+.form-signup {
+    width: 640px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-login label, 
+.form-signup label {
+    height: 26px;
+    line-height: 26px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-login input, 
+.form-signup input {
+    height: 56px;
+    border: 0;
+    background-color: var(--gray100);
+    border-radius: 12px;
+    padding: 0 80px 0 20px;
+    margin: 10px 0;
+}
+
+.login-toggle, 
+.signup-toggle {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    transform: translateY(50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.login-login-btn, 
+.signup-btn {
+    width: 640px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 0 20px;
+    background-color: var(--blue);
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.social-login {
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E6F2FF;
+    align-items: center;
+    padding: 0 23px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.social-login li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.auth-footer {
+    text-align: center;
+}
+
+.auth-footer a {
+    color: var(--blue);
+    text-decoration: underline;
 }

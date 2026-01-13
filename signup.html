@@ -7,26 +7,37 @@
         <title>판다마켓</title>
     </head>
     <body>
-        <header class="login-header">
-            <a class="login-logo" href="index.html">
+        <header class="signup-header">
+            <a class="signup-logo" href="index.html">
                 <img src="images/logo.png" alt="logo">
             </a>
         </header>
         
-        <main class="main-login">
+        <main class="main-signup">
             <form>
-                <div class="form-login">
+                <div class="form-signup">
                     <label for="user-email">이메일</label>
                     <input type="email" id="user-email" name="user-email" placeholder="이메일을 입력해주세요" required>
                 </div>
-                <div class="form-login">
-                    <label for="user-pw">비밀번호</label>
-                    <input type="password" id="user-pw" name="user-pw" placeholder="비밀번호를 입력해주세요" required>
-                    <button type="button" class="login-toggle" aria-label="비밀번호 보기">
+                <div class="form-signup">
+                    <label for="user-name">닉네임</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="닉네임을 입력해주세요" required>
+                </div>
+                <div class="form-signup">
+                    <label for="user-pw-check">비밀번호</label>
+                    <input type="password" id="user-pw-check" name="user-pw-check" placeholder="비밀번호를 입력해주세요" required>
+                    <button type="button" class="signup-toggle" aria-label="비밀번호 보기">
                         <img src="images/sign_images/Property 1=Variant2.svg">
                     </button>
                 </div>
-                <a class="login-login-btn" href="#">로그인</a>
+                <div class="form-signup">
+                    <label for="user-pw-">비밀번호 확인</label>
+                    <input type="password" id="user-pw" name="user-pw" placeholder="비밀번호를 다시 한 번 입력해주세요" required>
+                    <button type="button" class="signup-toggle" aria-label="비밀번호 보기">
+                        <img src="images/sign_images/Property 1=Variant2.svg">
+                    </button>
+                </div>
+                <a class="signup-btn" href="#">회원가입</a>
             </form>
 
             <div class="social-login">
@@ -44,9 +55,9 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="auth-footer">
-                판다마켓이 처음이신가요? <a href="/signup.html">회원가입</a>
+                이미 회원이신가요? <a href="/login.html">로그인</a>
             </div>
         </main>
     </body>
