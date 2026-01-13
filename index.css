@@ -2,6 +2,7 @@
 .gnb {
   width: 1120px;
   margin: 9.5px auto;
+  max-width: 1920px;
 }
 
 .gnb > nav {
@@ -9,6 +10,8 @@
   align-items: center;
   margin: 0px auto;
   justify-content: space-between;
+
+  max-width: 1120px;
 }
 
 .btn-small-48 {
