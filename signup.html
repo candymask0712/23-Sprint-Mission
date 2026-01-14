@@ -3,7 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/signup.css" />
+
     <title>판다마켓</title>
   </head>
-  <body></body>
+  <body>
+    <main class="signup-body">
+      <div class="signup-container">
+        <a href="index.html">
+          <img
+            src="./img/login-form-logo.svg"
+            alt="판다마켓 로고"
+            class="signup-form-logo"
+          />
+        </a>
+
+        <form class="signup-form">
+          <div class="signup-form-input-container">
+            <label for="email">이메일</label>
+            <input type="email" id="email" />
+          </div>
+
+          <div class="signup-form-input-container">
+            <label for="nickname">닉네임</label>
+            <input type="email" id="nickname" />
+          </div>
+
+          <div class="signup-form-input-container">
+            <label for="password">비밀번호</label>
+            <!-- 아이콘과 겹치지 않게 하기 위한 추가 여백 -->
+            <input type="password" id="password" style="padding-right: 52px" />
+            <img
+              src="./img/btn/btn_visibility_off_24px.svg"
+              alt="비밀번호 보이기"
+              class="signup-form-input-visibility"
+            />
+          </div>
+
+          <div class="signup-form-input-container">
+            <label for="passwordCheck">비밀번호 확인</label>
+            <!-- 아이콘과 겹치지 않게 하기 위한 추가 여백 -->
+            <input
+              type="password"
+              id="passwordCheck"
+              style="padding-right: 52px"
+            />
+            <img
+              src="./img/btn/btn_visibility_off_24px.svg"
+              alt="비밀번호 보이기"
+              class="signup-form-input-visibility"
+            />
+          </div>
+
+          <button type="submit" class="signup-form-btn">로그인</button>
+
+          <div class="signup-form-sns-container">
+            <span>간편 로그인하기</span>
+            <div class="signup-form-sns-icons">
+              <a href="https://www.google.com/">
+                <img
+                  src="./img/icons/ic_google.svg"
+                  alt="구글 바로가기"
+                  width="42px"
+                  height="42px"
+                />
+              </a>
+              <a href="https://www.kakaocorp.com/page/">
+                <img
+                  src="./img/icons/ic_kakao.svg"
+                  alt="카카오 바로가기"
+                  width="42px"
+                  height="42px"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="signup-form-welcome-container">
+            판다마켓이 처음이신가요? <a href="/signup.html">회원가입</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
