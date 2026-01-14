@@ -148,7 +148,28 @@
   word-break: keep-all;
 }
 
-footer {
+.footer-container {
   height: 160px;
   background-color: var(--secondary-900);
+  padding-top: 30px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.footer-inner-left {
+  color: var(--secondary-400);
+}
+
+.footer-inner-center {
+  color: var(--secondary-200);
+}
+
+.footer-inner-right {
+  display: flex;
+  gap: 12px;
 }
