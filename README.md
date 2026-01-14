@@ -5,7 +5,6 @@
 - “회원 가입”버튼 클릭 시 “/signup” 페이지로 이동합니다. ✔ <br>
 - “로그인”버튼 클릭 시 (“/login”) 페이지로 이동합니다. ✔ <br>
 
-
 ### 기본
 
 - [요구사항 모두 구현]
@@ -22,7 +21,6 @@
 
 [![Sprint1 첫번째 이미지](이미지url)](https://github.com/douk9909/23-Sprint-Mission/blob/Basic-%EA%B9%80%EB%8F%84%EC%9A%B1/1.png)
 [![Sprint1 두번째 이미지](이미지url)](https://github.com/douk9909/23-Sprint-Mission/blob/Basic-%EA%B9%80%EB%8F%84%EC%9A%B1/2.png)
-
 
 ## 주강사님에게
 
