@@ -47,6 +47,10 @@
   color: var(--secondary-800);
 }
 
+.signup-form-input-container > .add-padding-right {
+  padding-right: 52px;
+}
+
 .signup-form-input-visibility {
   position: absolute;
   right: 24px;
