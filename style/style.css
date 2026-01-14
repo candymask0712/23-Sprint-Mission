@@ -163,10 +163,12 @@
 
 .footer-inner-left {
   color: var(--secondary-400);
+  font: 400 16px / 19px "Pretendard";
 }
 
 .footer-inner-center {
   color: var(--secondary-200);
+  font: 400 16px / 19px "Pretendard";
 }
 
 .footer-inner-right {
